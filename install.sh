@@ -1,5 +1,6 @@
 
 curl -s https://raw.githubusercontent.com/daniel081009/Daohminette/main/Daohminette.sh > ~/Documents/Daohminette.sh
+chmod 777 ~/Documents/Daohminette.sh
 if [[ `cat ~/.zshrc` == *"daohminette"* ]];then
    echo "${green}[✔] 이미 설치가 되어 있습니다${clear}"
 else
