@@ -14,9 +14,9 @@ clear='\033[0m'
 
 ls -l */*
 if [ -z `find . -name "*.out" -o -name "main.c"` ];then
-   echo "${green}[✔] tmep 파일들이 없네요${clear}"
+   echo "${green}[✔] tmep 파일들이 없음!${clear}"
 else
-   echo "${red}[✗] temp 파일들을 삭제함${clear}"
+   echo "${red}[✗] temp 파일들을 삭제함!${clear}"
    rm */main.c
    rm */*.out 
    echo "${green}[✔] tmep 파일들이 성공적으로 삭제됨!${clear}"
@@ -26,7 +26,7 @@ fi
 if [ -z `grep -E -H -n "printf|int main|stdio.h" */*` ];then
    echo "${green}[✔] test코드가 없음!${clear}"
 else
-   echo "${red}[✗] test코드 지우세요${clear}!"
+   echo "${red}[✗] test 코드 발견!${clear}!"
    grep -E -H -n "printf|int main|stdio.h" */*
 fi
 
