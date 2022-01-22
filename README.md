@@ -15,7 +15,7 @@ curl -s https://raw.githubusercontent.com/daniel081009/Daohminette/main/install.
 프로젝트 폴더에서 ```daohminette``` 입력
 
 ## 기능
-1. 프로그램 컴파일 확인 
+1. 프로그램 컴파일 확인(링커 에러만 나면 성공)
 2. printf,int main,stdio.h 잡음
 3. 도미네이터 확인(에러만 표시)
-4. temp 파일 삭제 (.out main.c)
+4. temp 파일 삭제 (.out,main.c)
