@@ -38,6 +38,7 @@ else
    echo "${red}[✗] C 문법 체크 ㄱㄱ${clear}"   
    gcc */* -Wall -Wextra -Werror 
 fi
+rm ./log
 
 if [ -z `norminette -R CheckForbiddenSourceHeader | grep "Error"` ];then
    echo "${green}[✔] 악독한 도미네이트에서 안전!${clear}"
